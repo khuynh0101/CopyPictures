@@ -18,6 +18,7 @@ namespace CopyPictures
 
         static void Main(string[] args)
         {
+            string a = "test";
             _source = @"C:\Pictures\";
             _dest = @"H:\Khuong\Pictures\Khuong and Michelle";
             if (args.Length > 0)
