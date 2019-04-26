@@ -30,7 +30,7 @@ namespace CopyPictures
                 if (dateTaken.Equals(DateTime.MinValue))
                 {
                     dateTaken = fileInfo.LastWriteTime;
-                }
+                } 
 
                  string fileName = fileInfo.Name;
                 int errorCode = -1;
