@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -17,9 +18,9 @@ namespace CopyPictures
         private static string _dest = "";
 
         static void Main(string[] args)
-        { 
-            _source = @"C:\Pictures\";
-            _dest = @"H:\Khuong\Pictures\Khuong and Michelle";
+        {
+            _source = ConfigurationManager.AppSettings["sourceFolder"];
+            _dest = ConfigurationManager.AppSettings["destinationFolder"];
             if (args.Length > 0)
                 _source = args[0];
 
