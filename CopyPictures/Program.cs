@@ -24,7 +24,7 @@ namespace CopyPictures
                 _source = args[0];
 
             foreach (string file in Directory.GetFiles(_source))
-            {
+            { 
                 FileInfo fileInfo = new FileInfo(file);
                 DateTime dateTaken = GetDateTakenFromImage(file);
                 if (dateTaken.Equals(DateTime.MinValue))
