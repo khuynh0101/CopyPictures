@@ -19,7 +19,7 @@ namespace CopyPictures
 
         static void Main(string[] args)
         {
-            string a = "branch_#6";
+            string a = "branch_#7";
             _source = ConfigurationManager.AppSettings["sourceFolder"];
             _dest = ConfigurationManager.AppSettings["destinationFolder"];
             if (args.Length > 0)
