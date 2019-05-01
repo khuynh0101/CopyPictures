@@ -19,7 +19,7 @@ namespace CopyPictures
 
         static void Main(string[] args)
         {
-            string a = "branch_#8";
+            string a = "new_branch";
             _source = ConfigurationManager.AppSettings["sourceFolder"];
             _dest = ConfigurationManager.AppSettings["destinationFolder"];
             if (args.Length > 0)
@@ -45,7 +45,7 @@ namespace CopyPictures
                 { 
                     if (errorCode == 1)
                         File.Move(file, file.Replace(fileName, "exist_" + fileName));
-                }
+                } 
             }
         }
         
